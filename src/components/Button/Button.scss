@@ -1,0 +1,35 @@
+@import "../../partials/variables";
+.Button {
+  font-family: $Muli;
+  width: max-content;
+  min-height: max-content;
+  padding: 7px 50px;
+  border: none;
+  border-radius: 30px;
+  transition: all 0.2s linear;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.primary {
+  background-color: $secondary_color_shade_1;
+  color: white;
+  &:hover {
+    background-color: $secondary_color_shade_2;
+    opacity: 0.9;
+  }
+}
+.secondary {
+  background-color: transparent;
+  border: 1px solid $secondary_color_shade_1;
+  color: $secondary_color_shade_1;
+  &:hover {
+    background-color: $secondary_color_shade_2;
+    color: white;
+  }
+}
+.disabled {
+  background-color: $lightgray;
+  color: $gray;
+  cursor: not-allowed;
+}

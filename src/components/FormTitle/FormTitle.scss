@@ -1,0 +1,24 @@
+@import "../../partials/variables";
+
+.FormTitle {
+  .form-heading {
+    position: relative;
+    color: $primary_color_shade_3;
+
+    // background-color: aqua;
+    // &::after {
+    //   content: "";
+    //   position: absolute;
+    //   top: 60%;
+    //   height: 2px;
+    //   width: 50%;
+    //   max-width: 100%;
+    //   background-color: $primary_color_shade_3;
+    //   color: $primary_color_shade_3;
+    // }
+  }
+  .form-message {
+    font-size: 0.8rem;
+    color: $primary_color_shade_3;
+  }
+}

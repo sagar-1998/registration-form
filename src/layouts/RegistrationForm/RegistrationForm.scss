@@ -1,0 +1,12 @@
+@mixin flex-props {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.RegistrationForm {
+  @include flex-props;
+  align-items: center;
+  width: 100%;
+  margin: 40px 0;
+  padding: 40px;
+}

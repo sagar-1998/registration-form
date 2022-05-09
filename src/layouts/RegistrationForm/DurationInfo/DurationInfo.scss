@@ -1,0 +1,41 @@
+@import "../../../partials/variables";
+
+@mixin flex-props {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.duration-form-outer-container {
+  @include flex-props;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  .DurationInfoForm {
+    @include flex-props;
+    align-items: center;
+    width: 50%;
+    margin: 20px 0;
+    padding: 20px;
+    // background-color: whitesmoke;
+    .input-container {
+      @include flex-props;
+      margin: 20px 0px;
+      width: 60%;
+      .sub-form-link {
+        text-decoration: none;
+        margin-top: 10px;
+        font-size: 14px;
+        font-weight: 600;
+        color: $primary_color_shade_2;
+      }
+    }
+    .form1-input-container {
+      height: 50px;
+      margin: 20px 0;
+    }
+    .button-container {
+      align-self: flex-end;
+      margin: 100px 0 0 0;
+    }
+  }
+}

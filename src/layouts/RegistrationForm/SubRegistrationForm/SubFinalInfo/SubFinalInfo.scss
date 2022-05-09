@@ -1,0 +1,73 @@
+@import "../../../../partials/variables";
+
+@mixin flex-props {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.SubFinalInfoForm {
+  @include flex-props;
+  align-items: center;
+  width: 50%;
+  margin: 20px 0;
+  padding: 20px;
+  .form-header-div {
+    text-align: center;
+    width: 50%;
+  }
+  // background-color: whitesmoke;
+  .input-container {
+    @include flex-props;
+    margin: 20px 0px;
+    width: 60%;
+    .sub-form-link {
+      text-decoration: none;
+      margin-top: 10px;
+      font-size: 14px;
+      font-weight: 600;
+      color: $primary_color_shade_2;
+    }
+  }
+  .form1-input-container {
+    height: 50px;
+    margin: 20px 0;
+  }
+  .button-container {
+    align-self: flex-end;
+    margin: 100px 0 0 0;
+  }
+  .person-details-container {
+    height: 200px;
+    width: 50%;
+    .person-container {
+      height: 200px;
+      overflow-y: scroll;
+    }
+    .img-name {
+      @include flex-props();
+      justify-content: flex-start;
+      flex-direction: row;
+      margin-bottom: 20px;
+      .avatar-img {
+        margin-right: 20px;
+        max-width: 30px;
+      }
+      .person-name {
+        font-family: $Muli;
+        font-size: 14px;
+      }
+    }
+    .add-more-container {
+      @extend .img-name;
+      margin-top: 10px;
+      align-items: center;
+      button {
+        @extend .avatar-img;
+      }
+      p {
+        @extend .person-name;
+        margin-left: 10px;
+      }
+    }
+  }
+}

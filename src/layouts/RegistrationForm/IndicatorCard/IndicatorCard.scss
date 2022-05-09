@@ -1,0 +1,46 @@
+@import "../../../partials/variables";
+
+.IndicatorCard {
+  height: max-content;
+  width: 15%;
+  border: 1px solid $lightgray;
+  align-self: center;
+  position: relative;
+  border-radius: 3px;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -11px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    border-left: 1px solid $lightgray;
+    border-bottom: 1px solid $lightgray;
+    background-color: white;
+    transform: rotate(45deg);
+  }
+  .heading {
+    color: $primary_color_shade_2;
+    border-bottom: 1px solid $lightgray;
+    padding: 15px 100px 15px 30px;
+  }
+  .info-div {
+    padding: 30px;
+  }
+  .rows {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  .row-1,
+  .row-2 {
+    color: $gray;
+    font-size: 0.9rem;
+  }
+  .row-3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+}

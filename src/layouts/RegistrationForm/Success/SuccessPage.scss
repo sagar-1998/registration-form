@@ -1,0 +1,22 @@
+@import "../../../partials/variables";
+@mixin flex-props {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.SuccessPage {
+  @include flex-props();
+  .image-container {
+    @include flex-props();
+    margin: 50px 0;
+    p {
+      letter-spacing: 1px;
+      font-weight: 700;
+      color: $gray;
+    }
+    span {
+      color: $secondary_color_shade_1;
+    }
+  }
+}

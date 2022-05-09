@@ -1,0 +1,73 @@
+@import "../../../partials/variables";
+
+.payment-form-outer-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  .PaymentForm {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    .form-container {
+      .input-container {
+        display: flex;
+        flex-direction: column;
+        label {
+          margin-top: 20px;
+        }
+
+        .expiration-and-cvv-input {
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+          .outer-expiry-date-container {
+            margin-top: 20px;
+          }
+          .expiration-date-container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-top: 3px;
+            border-radius: 3px;
+            border: 1px solid $lightgray;
+            margin-right: 30px;
+
+            input {
+              // width: ;
+              // padding: unset;
+              border: unset;
+            }
+          }
+          .invalid {
+            border: 1px solid $danger;
+            &:active,
+            &:focus {
+              outline: none;
+            }
+          }
+
+          .cvv-container {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+          }
+        }
+      }
+      .promo-container {
+        width: 100%;
+        .sub-form-link {
+          padding: 0;
+          background-color: transparent;
+          border: none;
+          cursor: pointer;
+          text-align: start;
+          text-decoration: none;
+          margin-top: 20px;
+          font-size: 14px;
+          font-weight: 600;
+          color: $primary_color_shade_2;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+@import "../../partials/variables";
+.outer-container {
+  position: relative;
+  margin: 50px 0px 25px 0;
+  width: 100%;
+  align-self: center;
+  background-color: $lightgray;
+  height: 5px;
+  border-radius: 2px;
+  transition: all 0.2s ease-in-out;
+  .current-state {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 12px;
+    left: 20%;
+    transform: translateY(-45%);
+    width: 25px;
+    height: 25px;
+    border: 2px solid white;
+    box-shadow: -1px 4px 4px rgba(30, 133, 130, 0.17);
+    border-radius: 50%;
+    background-color: $primary_color_shade_1;
+    transition: left 0.2s linear;
+  }
+  .visited-state {
+    @extend .current-state;
+    border: none;
+    font-size: 10px;
+    width: 18px;
+    height: 18px;
+  }
+  .inner-container {
+    width: 20%;
+    background-color: $primary_color_shade_2;
+    height: 4px;
+    border-radius: 2px;
+    transition: width 0.2s linear;
+  }
+}

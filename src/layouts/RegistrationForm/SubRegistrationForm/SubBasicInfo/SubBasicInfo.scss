@@ -1,0 +1,28 @@
+@mixin flex-props {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.SubBasicInfoForm {
+  @include flex-props;
+  align-items: center;
+  width: 50%;
+  margin: 20px 0;
+  padding: 20px;
+  // background-color: whitesmoke;
+  .form-title-div {
+    width: 60%;
+  }
+  .input-container {
+    @include flex-props;
+    width: 60%;
+  }
+  .form1-input-container {
+    height: 50px;
+    margin: 20px 0;
+  }
+  .button-container {
+    align-self: flex-end;
+    margin: 100px 0 0 0;
+  }
+}

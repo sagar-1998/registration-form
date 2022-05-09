@@ -1,0 +1,35 @@
+@import "../../partials/variables";
+.Dropdown {
+  font-family: $Muli;
+  border: 1px solid $lightgray;
+  border-radius: 3px;
+  min-height: 40px;
+  max-width: 100%;
+  padding-left: 15px;
+  box-sizing: border-box !important;
+  -moz-appearance: none; /* Firefox */
+  -webkit-appearance: none; /* Safari and Chrome */
+  appearance: none;
+  background-image: url("../../assets/svgs/down-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 15px);
+  background-size: 12px;
+  &:invalid {
+    color: gray;
+  }
+  &:active,
+  &:focus {
+    outline: 1px solid $secondary_color_shade_3;
+  }
+  &:focus::placeholder {
+    color: lightgray;
+  }
+}
+
+.invalid {
+  border: 1px solid $danger;
+  &:active,
+  &:focus {
+    outline: none;
+  }
+}

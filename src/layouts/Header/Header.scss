@@ -1,0 +1,9 @@
+@import "../../partials/variables";
+.Header {
+  padding: 15px;
+  border-bottom: 1px solid $lightgray;
+  .logo {
+    max-width: 100%;
+    width: auto;
+  }
+}

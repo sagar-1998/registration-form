@@ -1,0 +1,35 @@
+@import "../BasicInfo/BasicInfo.scss";
+
+@mixin flex-props {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.PersonalInfoForm {
+  @include flex-props;
+  align-items: center;
+  width: 40%;
+  margin: 40px 0;
+  padding: 40px;
+  // background-color: whitesmoke;
+  .input-container {
+    @include flex-props;
+    margin: 20px 0px;
+    height: 40px;
+  }
+  .button-container {
+    align-self: flex-end;
+    margin: 100px 0 0 0;
+  }
+  .dropdown-input-container {
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    width: 100%;
+    .input-div {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+  }
+}
